@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+	<link href="estilos.css" rel="stylesheet" />
+
+<head>
+
+
+	<title></title>
+</head>
+<body>
+	<section>
+		<h1>Formularios</h1>
+		<form action="htt://midominio.com/miservicioweb.php?" method="get">
+		<!-- metodo get :solo como texto , metodo ṕost : sirve para mandar muchos mas datos que get, se puede enviar imagenes y archivos -->
+			<fieldset > <!-- contenedor de zonas -->
+				<legend> Aqui va el titulo del contenedor .</legend>
+				<textarea>  Aqui puede venir un texto </textarea>
+				<label for="nombre">nombre</label>
+				<input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre" />
+				<br/>
+				<label for="apellido">apellido</label>
+				<input name="apellido" id="apellido" type="text" placeholder="Escribe tu apellido" />
+				<br/>
+				<label for="nombre">clave</label>
+				<input name="clave" id="clave" type="password" placeholder="Escribe tu clave" />
+	            <br/>
+            </fieldset>
+			<input type="number" min="6" max="18" step="2" />
+            <br/>
+			<input type="range" min="1" max="20" step="1" value="4" name=""/>
+            <br/>
+            <input type="date"/>
+            <br/>
+            <input type="color"/>
+            <br/>
+            <input type="file"/>
+            <br/>
+            <label for="envio_mail">Enviar mail</label>
+            <input name="envio_mail" id="envio_mail" type="checkbox"/>
+            <input type="radio"/>
+            <br/>
+            <label>ROJO</label>
+            <input name="color" id="rojo" type="radio"> 
+            <label>AZUL</label>
+            <input name="color" id="azul" type="radio"> 
+            <!--el name , hace que solo se pueda marcar solo una -->
+			<!--value : valor por defecto -->
+			<br/>
+			<label for="paises"> Naciones </label>
+			<select name="paises" id="paises">
+				<option value="es"> España </option>
+				<option value="fr"> Francia </option>
+				
+			</select>
+			<br/>
+			<!-- menu desplegable -->
+			<label for="paises"> Naciones _ menu sub menu </label>
+			<select name="paises" id="paises">
+			 	<optgroup label="America">
+			 		<option value="es"> España </option>
+					<option value="ch">Chile</option>
+			 	</optgroup>
+				<optgroup label="Europa">
+			 		<option value="fr" selected=""> Francia </option>
+			 		<!-- selected : por defecto -->
+					<option value="In"> Inglaterra</option>
+			 	</optgroup>
+
+			</select>
+		</form>
+	</section>
+</body>
+</html>

@@ -1,0 +1,6 @@
+textarea{
+	resize: none; /* atributo para que no se mueva el cuadro */
+	width: 100%;
+	height: 120%;
+
+}

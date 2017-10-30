@@ -1,0 +1,13 @@
+nav ul{
+	padding-left: 2px;
+
+
+}
+nav ul li a{
+	color:orange; 
+}
+nav.horizontal ul li{
+	color:red;
+	display: inline-block;
+}
+

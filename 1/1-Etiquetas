@@ -1,0 +1,18 @@
+Etiquetas
+
+<p> </p> etiquetas que pueden anidar 
+<img/> Etiquetas que no pueden anidar
+
+sintaxis
+<
+input 				nombre de la etiqueta
+type="number"		atributos con posibles valores (caract,numeros,etc)
+id="edad"			identificador unico (para css o js)
+class=""			clases reutilizables (para ccs o js)
+readonly 			propiedades 
+>
+</>
+
+
+
+developer.mozilla.org
