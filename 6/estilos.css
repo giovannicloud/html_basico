@@ -4,3 +4,11 @@ textarea{
 	height: 120%;
 
 }
+/* acomodar label */
+label {
+    width: 130px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    
+}

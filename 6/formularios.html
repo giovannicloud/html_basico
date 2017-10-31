@@ -15,10 +15,10 @@
 		<!-- metodo get :solo como texto , metodo ṕost : sirve para mandar muchos mas datos que get, se puede enviar imagenes y archivos -->
 			<fieldset > <!-- contenedor de zonas -->
 				<legend> Aqui va el titulo del contenedor .</legend>
-				<textarea>  Aqui puede venir un texto </textarea>
+				<textarea>  ESTO ES UN CAMPO DE TEXTO : Aqui puede venir un texto </textarea>
 				<label for="nombre">nombre</label>
 				<!-- placeholder: permite dar informacion sobre lo que hay que escribir en los campos , pueden sustitui los label , como forma de responsive design-->
-				<input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre" />
+				<input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre" required />
 				<br/>
 				<label for="apellido">apellido</label>
 				<input name="apellido" id="apellido" type="text" placeholder="Escribe tu apellido" />
@@ -26,6 +26,9 @@
 				<label for="nombre">clave</label>
 				<input name="clave" id="clave" type="password" placeholder="Escribe tu clave" />
 	            <br/>
+            </fieldset>
+            <fieldset>
+            	
             </fieldset>
 
             <label for="numero"> Numero </label>
@@ -52,6 +55,7 @@
             <!--el name , hace que solo se pueda marcar solo una -->
 			<!--value : valor por defecto -->
 			<br/>
+			<!-- DESPLEGABLE -->
 			<label for="paises"> Naciones </label>
 			<select name="paises" id="paises">
 				<option value="es"> España </option>
@@ -71,8 +75,25 @@
 			 		<!-- selected : por defecto -->
 					<option value="In"> Inglaterra</option>
 			 	</optgroup>
-
 			</select>
+			<!-- otro tipo de menu desplegable : datalist-->
+			<br/>
+			<label for="ciudad"> Ciudad</label>
+			<input name="ciudad" id="ciudad" list="nombre_ciudad">
+			<datalist id="nombre_ciudad">
+				<option value="santiago">
+				<option value="viña">
+				<option value="concepcion">	
+			</datalist>
+			<input type="submit" value="Enviar respuesta ciudad">
+			<input type="reset" value="Borrar">
+
+
+			<!-- a este tipo de etiquetas se le pueden poner imagenes -->
+			<button type="submit">enviar</button>
+			<button type="reset">borarr</button>
+
+
 		</form>
 	</section>
 </body>
